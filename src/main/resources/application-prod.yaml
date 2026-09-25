@@ -1,0 +1,21 @@
+server:
+  port: ${PUERTO:8080}
+
+spring:
+  datasource:
+    url: ${BD_URL}
+    username: ${BD_USUARIO}
+    password: ${BD_CLAVE}
+    driver-class-name: oracle.jdbc.OracleDriver
+
+  jpa:
+    hibernate:
+      ddl-auto: validate
+    show-sql: false
+    database-platform: org.hibernate.dialect.OracleDialect
+
+springdoc:
+  swagger-ui:
+    enabled: false
+  api-docs:
+    enabled: false

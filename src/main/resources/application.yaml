@@ -1,0 +1,5 @@
+spring:
+  application:
+    name: StockAndesBackend
+  profiles:
+    active: dev
